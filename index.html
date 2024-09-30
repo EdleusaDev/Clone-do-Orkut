@@ -1,66 +1,68 @@
 <!DOCTYPE html>
-<html lang= "pt-br">
+<html lang="pt-BR">
 <head>
-	<title>Clone do ORKUT</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Clone do ORKUT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-	<header>
-		<div id="nota">
-			<p><strong id="aviso">Aviso:</strong> Esta página foi feita com o objetivo de colocar em prática os conhecimentos adquiridos em Desenvolvimento Web. Trata-se de um clone do orkut.</p>
-		</div>
-	</header>
-	<section>
-		<div id="informacao"> 
-			<h1 id="orkut">orkut</h1>
-			<p class="paragrafo">
-				<strong class="cor-letra">Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instatâneas<br>
-				<strong class="cor-letra">Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades<br>
-				<strong class="cor-letra">Compartilhe</strong> seus vídeos, fotos e paixões em um só lugar
-			</p>
-		</div>
-	
-		<div id="formulario">
-			<h2 id="titulo-form">Acesse o orkut com a sua conta</h2>
-			<form>
-				<div>
-					<label for="email" class="rotulo-label">E-mail:</label>
-					<input type="text" name="email" id="email">
-				</div>
-				<div>
-					<label for="senha" class="rotulo-label">Senha:</label>
-					<input type="password" name="senhausuario" id="senha">
-				</div>
-				<div>
-					<input type="checkbox" name="selecao" value="" id="marcar"></input>
-					<label for="senha" class="marcar-label">Salvar as minhas informações neste<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computador.</label>
-					<p id="precaucao">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não use em computadores públicos.[?]</p>
-					<input type="button" name="login" id="entrar" value="Login">
-				</div>
-				<div id= "link1">
-					<a href="" id="ajuda">Não consegue acessar a sua conta?</a>
-				</div>
-			</form>
-		</div>
-		<div id="cadastre">
-			<p id="membro">Ainda não é membro?</p>
-			<a href="" id="ajuda">ENTRAR JÁ</a>
-		</div>
-	</section>
-	<footer id="rodape">
-		<strong>
-			By: Edleusa Amaral
-		</strong>
-		<span>
-			&copy; 2022 Orkut - 
-		</span>
-		<a href="" id="sobre">Sobre o Orkut</a> -
-		<a href="" id="sobre">Centro de segurança</a> -
-		<a href="" id="sobre">Privacidade</a> -
-		<a href="" id="sobre">Termos</a> -
-		<a href="" id="sobre">Contato</a> -
-	</footer>
+    <header>
+        <div id="nota">
+            <p><strong id="aviso">Aviso:</strong> Esta página foi feita com o objetivo de colocar em prática os conhecimentos adquiridos em Desenvolvimento Web. Trata-se de um clone do orkut.</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="informacao"> 
+                <h1 id="orkut">orkut</h1>
+                <p class="paragrafo">
+                    <strong class="cor-letra">Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas<br>
+                    <strong class="cor-letra">Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades<br>
+                    <strong class="cor-letra">Compartilhe</strong> seus vídeos, fotos e paixões em um só lugar
+                </p>
+            </div>
+        
+            <div id="formulario">
+                <h2 id="titulo-form">Acesse o orkut com a sua conta</h2>
+                <form>
+                    <div>
+                        <label for="email" class="rotulo-label">E-mail:</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="senha" class="rotulo-label">Senha:</label>
+                        <input type="password" name="senhausuario" id="senha" required>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="selecao" value="salvar" id="marcar">
+                        <label for="marcar" class="marcar-label">Salvar as minhas informações neste computador.</label>
+                        <p id="precaucao">Não use em computadores públicos.[?]</p>
+                        <input type="submit" name="login" id="entrar" value="Login">
+                    </div>
+                    <div id="link1">
+                        <a href="#" id="ajuda1">Não consegue acessar a sua conta?</a>
+                    </div>
+                </form>
+            </div>
+            <div id="cadastre">
+                <p id="membro">Ainda não é membro?</p>
+                <a href="#" id="ajuda2">ENTRAR JÁ</a>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <strong>
+            By: Edleusa Amaral
+        </strong>
+        <span>
+            &copy; 2022 Orkut - 
+        </span>
+        <a href="#" id="sobre1">Sobre o Orkut</a> -
+        <a href="#" id="sobre2">Centro de segurança</a> -
+        <a href="#" id="sobre3">Privacidade</a> -
+        <a href="#" id="sobre4">Termos</a> -
+        <a href="#" id="sobre5">Contato</a> -
+    </footer>
 </body>
 </html>
