@@ -10,7 +10,7 @@ a:visited{
 }
 
 #nota{
-	background-color:#eaf24b;
+	background-color:#ffffe0;
 	border: 2px solid #ffff;
 	border-radius: 10px;
 	padding:1px;
@@ -72,6 +72,7 @@ a:visited{
 	color: #80799f;
 	margin-top: 5px;
 	margin-bottom: 3px;
+	margin-left: 20px; /* Ajuste conforme necessário */
 }
 
 #entrar{
@@ -117,8 +118,9 @@ a:visited{
 	font-family: sans-serif;
 	font-size: 12px;
 	margin-bottom: 10px;
+        margin-left: 20px; /* Ajuste conforme necessário */
+	
 }
-
 .cor-letra{
 	color: #dd0097;
 }
@@ -138,3 +140,4 @@ a:visited{
 	font-size: 12px;
 	color: #373737;
 }
+
