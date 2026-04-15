@@ -1,40 +1,145 @@
-body{
-	background-color:#d4ddec;
-	width: 98.2%;
-	height: 100%;
+/* RESET BÁSICO */
+body {
+  margin: 0;
+  background-color: #d4ddec;
+  font-family: Arial, sans-serif;
 }
 
-a:visited{
-	color:#0059b3;
-
+/* LINKS */
+a:visited {
+  color: #0059b3;
 }
 
-#nota{
-	background-color:#fcfdea;
-	border: 2px solid #ffff;
-	border-radius: 10px;
-	padding:1px;
-	margin-top: 6em;
-	font-family: sans-serif;
-	font-size: 12px;
+/* AVISO */
+#nota {
+  background-color: #fcfdea;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
 }
 
-#aviso{
-	color: #da1634;
-}
-#informacao{
-	background-color: #FFF;
-	display: inline-block;
-	padding: 2em 4em;
-	margin-top: 10px;
-	margin-right: 1px;
-	border: 2px solid #fff;
-	width: 54%
+#aviso {
+  color: #da1634;
 }
 
-#orkut{
-	font-family: HoratioDLig, sans-serif;
-	font-size: 6em;
+/* CONTAINER PRINCIPAL */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* LADO ESQUERDO */
+#informacao {
+  background-color: #fff;
+  padding: 2em;
+  border: 2px solid #fff;
+  width: 60%;
+}
+
+/* LOGO */
+#orkut {
+  font-size: 4em;
+  color: #dd0097;
+  text-align: center;
+}
+
+/* TEXTO */
+.paragrafo {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.cor-letra {
+  color: #dd0097;
+}
+
+/* LADO DIREITO */
+.lado-direito {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* FORMULÁRIO */
+#formulario {
+  background-color: #e8eefa;
+  border: 2px solid #fff;
+  padding: 15px;
+}
+
+/* CADASTRO */
+#cadastre {
+  background-color: #e8eefa;
+  border: 2px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* INPUTS */
+#email, #senha {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.rotulo-label {
+  font-size: 12px;
+}
+
+.marcar-label {
+  font-size: 12px;
+}
+
+#precaucao {
+  font-size: 11px;
+  color: #80799f;
+}
+
+#entrar {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* LINKS */
+#link1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#membro {
+  font-size: 12px;
+  color: #656c72;
+}
+
+/* RODAPÉ */
+#rodape {
+  background-color: #bccde7;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #informacao,
+  .lado-direito {
+    width: 100%;
+  }
+
+  #orkut {
+    font-size: 2.5em;
+  }
+}	font-size: 6em;
 	color: #dd0097;
 	text-align: center;
 	line-height: 0px;
