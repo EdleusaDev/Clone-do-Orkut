@@ -4,7 +4,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* aviso */
+/* LINKS */
+a:visited {
+  color: #0059b3;
+}
+
+/* AVISO */
 #nota {
   background-color: #fcfdea;
   border: 2px solid #fff;
@@ -18,28 +23,29 @@ body {
   color: #da1634;
 }
 
-/* container principal */
+/* CONTAINER PRINCIPAL */
 .container {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-/* lado esquerdo */
+/* LADO ESQUERDO */
 #informacao {
-  background: #fff;
+  background-color: #fff;
   padding: 2em;
+  border: 2px solid #fff;
   width: 60%;
 }
 
-/* logo */
+/* LOGO */
 #orkut {
   font-size: 4em;
   color: #dd0097;
   text-align: center;
 }
 
-/* texto */
+/* TEXTO */
 .paragrafo {
   font-size: 12px;
   text-align: center;
@@ -50,7 +56,7 @@ body {
   color: #dd0097;
 }
 
-/* lado direito */
+/* LADO DIREITO */
 .lado-direito {
   width: 40%;
   display: flex;
@@ -58,52 +64,50 @@ body {
   gap: 15px;
 }
 
-/* formulário e cadastro */
-#formulario,
+/* FORMULÁRIO */
+#formulario {
+  background-color: #e8eefa;
+  border: 2px solid #fff;
+  padding: 15px;
+}
+
+/* CADASTRO */
 #cadastre {
   background-color: #e8eefa;
   border: 2px solid #fff;
   padding: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 6px;
-}
-
-/* organização interna do form */
-#formulario form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* inputs */
-#email,
-#senha {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
-/* botão */
-#entrar {
-  width: 100%;
-  padding: 8px;
-  cursor: pointer;
-}
-
-/* link dentro do cadastro */
-#cadastre a {
-  display: block;
   text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
 }
 
-/* textos */
-#precaucao,
-.rotulo-label,
+/* INPUTS */
+#email, #senha {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.rotulo-label {
+  font-size: 12px;
+}
+
 .marcar-label {
   font-size: 12px;
+}
+
+#precaucao {
+  font-size: 11px;
+  color: #80799f;
+}
+
+#entrar {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* LINKS */
+#link1 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #membro {
@@ -111,7 +115,7 @@ body {
   color: #656c72;
 }
 
-/* rodapé */
+/* RODAPÉ */
 #rodape {
   background-color: #bccde7;
   padding: 10px;
@@ -120,7 +124,7 @@ body {
   margin-top: 20px;
 }
 
-/* responsivo */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
