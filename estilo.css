@@ -129,6 +129,7 @@ a:visited{
 	text-align: center;
 	line-height: 1.5em;
 }
+
 #rodape{
 	background-color:#bccde7;
 	margin-top: 10px;
@@ -137,4 +138,13 @@ a:visited{
 	font-family: sans-serif;
 	font-size: 12px;
 	color: #373737;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .center, .right {
+    width: 100%;
+  }
 }
