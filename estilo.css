@@ -4,18 +4,53 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* aviso */
+#nota {
+  background-color: #fcfdea;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+#aviso {
+  color: #da1634;
+}
+
+/* container principal */
 .container {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
+/* lado esquerdo */
 #informacao {
   background: #fff;
   padding: 2em;
   width: 60%;
 }
 
+/* logo */
+#orkut {
+  font-size: 4em;
+  color: #dd0097;
+  text-align: center;
+}
+
+/* texto */
+.paragrafo {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.cor-letra {
+  color: #dd0097;
+}
+
+/* lado direito */
 .lado-direito {
   width: 40%;
   display: flex;
@@ -23,23 +58,60 @@ body {
   gap: 15px;
 }
 
-/* FORMULÁRIO */
+/* formulário e cadastro */
 #formulario,
 #cadastre {
   background-color: #e8eefa;
   border: 2px solid #fff;
   padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
-/* INPUTS */
+/* organização interna do form */
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* inputs */
 #email,
 #senha {
   width: 100%;
+  padding: 8px;
   box-sizing: border-box;
-  margin-bottom: 10px;
 }
 
-/* RODAPÉ */
+/* botão */
+#entrar {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* link dentro do cadastro */
+#cadastre a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* textos */
+#precaucao,
+.rotulo-label,
+.marcar-label {
+  font-size: 12px;
+}
+
+#membro {
+  font-size: 12px;
+  color: #656c72;
+}
+
+/* rodapé */
 #rodape {
   background-color: #bccde7;
   padding: 10px;
@@ -48,7 +120,7 @@ body {
   margin-top: 20px;
 }
 
-/* RESPONSIVO */
+/* responsivo */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -57,5 +129,9 @@ body {
   #informacao,
   .lado-direito {
     width: 100%;
+  }
+
+  #orkut {
+    font-size: 2.5em;
   }
 }
