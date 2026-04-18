@@ -1,21 +1,21 @@
 body {
   margin: 0;
+  background-color: #d4ddec; /* SUA COR ORIGINAL */
   font-family: Arial, sans-serif;
-  background: #edf2f7;
 }
 
 /* AVISO */
 #nota {
-  background-color: #fffbe6;
-  border: 1px solid #e6db55;
-  border-radius: 8px;
-  padding: 12px;
+  background-color: #fcfdea;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
   margin: 20px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #aviso {
-  color: #d93025;
+  color: #da1634;
 }
 
 /* CONTAINER */
@@ -29,30 +29,27 @@ body {
 
 /* LADO ESQUERDO */
 #informacao {
-  background: #fff;
-  padding: 40px 30px;
+  background-color: #fff;
+  padding: 2em;
   width: 60%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* LOGO */
 #orkut {
-  font-size: 3.5em;
-  color: #e4007c;
+  font-size: 4em;
+  color: #dd0097; /* SUA COR */
   text-align: center;
-  margin-bottom: 20px;
 }
 
+/* TEXTO */
 .paragrafo {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  line-height: 1.6;
-  color: #333;
+  line-height: 1.5em;
 }
 
 .cor-letra {
-  color: #e4007c;
-  font-weight: bold;
+  color: #dd0097;
 }
 
 /* LADO DIREITO */
@@ -66,57 +63,38 @@ body {
 /* FORMULÁRIO */
 #formulario,
 #cadastre {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: #e8eefa;
+  border: 2px solid #fff;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* FORM */
+/* ORGANIZAÇÃO INTERNA (ESSA PARTE RESOLVE SEU PROBLEMA) */
 #formulario form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-
-#formulario h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
 /* INPUTS */
 #email,
 #senha {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
   width: 100%;
+  padding: 6px;
   box-sizing: border-box;
-}
-
-/* CHECKBOX */
-.marcar-label {
-  font-size: 13px;
+  margin-bottom: 5px;
 }
 
 /* BOTÃO */
 #entrar {
-  padding: 10px;
-  background: #e4007c;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#entrar:hover {
-  background: #c6006b;
+  width: 100%;
+  margin-top: 5px;
 }
 
 /* LINKS */
 a {
-  color: #2a5db0;
+  color: #0059b3;
   text-decoration: none;
 }
 
@@ -129,25 +107,29 @@ a:hover {
   text-align: center;
 }
 
-#cadastre a {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+/* TEXTOS */
+.rotulo-label,
+.marcar-label {
+  font-size: 12px;
 }
 
-/* TEXTO AUXILIAR */
 #precaucao {
   font-size: 11px;
-  color: #777;
+  color: #80799f;
+}
+
+#membro {
+  font-size: 12px;
+  color: #656c72;
 }
 
 /* RODAPÉ */
 #rodape {
-  background: #dfe6ef;
+  background-color: #bccde7;
+  padding: 10px;
   text-align: center;
-  padding: 12px;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* RESPONSIVO */
@@ -162,15 +144,7 @@ a:hover {
     width: 100%;
   }
 
-  #informacao {
-    padding: 25px 15px;
-  }
-
   #orkut {
     font-size: 2.5em;
-  }
-
-  #formulario h2 {
-    font-size: 16px;
   }
 }
